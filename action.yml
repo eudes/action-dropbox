@@ -27,5 +27,6 @@ outputs:
   files:
     description: "List of files uploaded to Dropbox"
 runs:
-  using: 'node14'
+  using: 'docker'
+  image: "Dockerfile"
   main: 'dist/index.js'
